@@ -43,5 +43,10 @@
 
 /* ================================Footer Section=================================== */
 footer{
-    /* padding: 5rem; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
 }
