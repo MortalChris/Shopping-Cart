@@ -1,0 +1,21 @@
+Header Element
+    Right
+        -cart
+        -contact
+    Left
+        -Logo
+        -TitleOfWebsite
+body
+    -3 Items
+        -onClick it should bring up a modal
+            -modal or another page: contains picture of product
+            -description
+            -price
+            -add/subtract amount of items button
+            -add to cart button
+Cart
+    -open with sidebar
+    or
+    -open another page
+footer
+    -Mady by me
