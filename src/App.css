@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================Main Container=================================== */
+#root{
+    display: grid;
+    grid-template-rows: 5rem 52rem 5rem;
+}
+/* ================================NavBar=================================== */
+#navBar{
+    list-style: none;
+	display: flex;
+	justify-content: space-between;
+    background-color: red;
+    align-items: center;
+}
+#leftNav{
+	display: flex;
+    align-items: center;
+}  
+#rightNav{
+	display: flex;
+}    
+#productPage{
+    padding-right: 2rem;
+}
+#cartPage{
+    padding-right: 2rem;
+}
+/* ================================Hero Section=================================== */
+#hero{
+    background-color: blue;
+    padding: 20rem;
+    text-align: center;
+}
+#hero button{
+    background-color: green;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* ================================Footer Section=================================== */
+footer{
+    /* padding: 5rem; */
+}

@@ -1,8 +1,12 @@
 import { useState } from 'react'
-import './App.css'
+import './Cart.css'
 
 function Cart() {
-    
+    return (
+        <>
+            <p>Hello World!</p>
+        </>
+    )
 }
 
 export default Cart;

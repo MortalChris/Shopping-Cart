@@ -6,25 +6,23 @@ import './App.css'
 function App() {  
   return (
     <>
-      <div id="navbar">
-        <ul>
-          <div id="left-nav">
+        <ul id="navBar">
+          <div id="leftNav">
             <img src="" alt="" />
             <li><a href="App">Clotho's</a></li>
           </div>
-          <div id="right-nav">
-            <li><a href="products">Products</a></li>
-            <li><a href="cart">Cart</a></li>
+          <div id="rightNav">
+            <li id="productPage"><a href="products">Products</a></li>
+            <li id="cartPage"><a href="cart">Cart</a></li>
           </div>
         </ul>
         <div id="hero">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ullam quaerat. Dolores labore aspernatur eos, molestiae hic laboriosam, magni nostrum vel aut mollitia voluptatum ducimus nesciunt minima, voluptas ea explicabo.</p>
-          <button>Products</button>
+          <a href="products"><button>Products</button></a>
         </div>
         <footer>
-          <p>Mde by Christian A. Valeri</p>
+          <p>Made by Christian A. Valeri</p>
         </footer>
-      </div>
     </>
   )
 }
