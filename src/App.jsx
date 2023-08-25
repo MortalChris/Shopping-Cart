@@ -10,11 +10,11 @@ function App() {
         <ul>
           <div id="left-nav">
             <img src="" alt="" />
-            <li><a>Clotho's</a></li>
+            <li><a href="App">Clotho's</a></li>
           </div>
           <div id="right-nav">
-            <li><a>Products</a></li>
-            <li><a>Cart</a></li>
+            <li><a href="products">Products</a></li>
+            <li><a href="cart">Cart</a></li>
           </div>
         </ul>
         <div id="hero">
@@ -29,4 +29,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
