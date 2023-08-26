@@ -19,6 +19,7 @@
 #leftNav{
 	display: flex;
     align-items: center;
+    padding-left: 2rem;
 }  
 #rightNav{
 	display: flex;
