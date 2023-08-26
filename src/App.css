@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+:root{
+    --text-clr: #e1f1f9;
+    --background-clr: #081c26;
+    --primary-clr: #5d1344;
+    --secondary-clr: #041016;
+    --accent-clr: #cde995;
+}
+
+
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: var(--accent-clr);
+    font-family: 'Tilt Prism', cursive;
 }
+body{
+    background-color: var(--background-clr);
 
+}
 /* ================================Main Container=================================== */
 #root{
     display: grid;
@@ -13,17 +29,22 @@
     list-style: none;
 	display: flex;
 	justify-content: space-between;
-    background-color: red;
+    background-color: var(--primary-clr);
     align-items: center;
+    font-size: 2rem;
 }
+
 #leftNav{
 	display: flex;
     align-items: center;
     padding-left: 2rem;
-}  
+} 
 #rightNav{
 	display: flex;
-}    
+}
+/* #rightNav:hover a{
+    color: var(--secondary-clr);
+} */
 #productPage{
     padding-right: 2rem;
 }
@@ -32,14 +53,21 @@
 }
 /* ================================Hero Section=================================== */
 #hero{
-    background-color: blue;
-    padding: 20rem;
+    background-color: var(--secondary-clr);
+    padding: 13rem;
     text-align: center;
 }
+#hero p{
+    font-size: 3rem;
+}
 #hero button{
-    background-color: green;
+    background-color: var(--primary-clr);
+    margin: 2rem;
     padding: 2rem;
     text-align: center;
+    border: none;
+    border-radius: 2rem;
+    font-size: 2rem;
 }
 
 /* ================================Footer Section=================================== */
@@ -50,4 +78,7 @@ footer{
 	justify-content: flex-start;
 	align-items: center;
 	align-content: stretch;
+}
+footer p{
+    font-size: 2rem;
 }

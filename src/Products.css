@@ -1,3 +1,12 @@
+
+:root{
+    --text-clr: #e1f1f9;
+    --background-clr: #081c26;
+    --primary-clr: #5d1344;
+    --secondary-clr: #041016;
+    --accent-clr: #cde995;
+}
+
 #productsContainer{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -10,15 +19,19 @@
 }
 .productBoxes{
     margin: 5rem;
-    border: .6rem solid blue;
+    border: .6rem solid var(--primary-clr);
+    background-color: var(--secondary-clr);
     border-radius: 3rem;
+}
+.productBoxes p{
+    color: var(--text-clr);
 }
 #productButton{
     border: none;
     padding: 1.2rem;
     margin: 1rem;
     border-radius: 1rem;
-    background-color: rgb(79, 79, 138);
+    background-color: var(--primary-clr);
 }
 #productButton:active {
     background-color: #4f2058;
