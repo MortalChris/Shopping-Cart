@@ -1,1 +1,15 @@
-
+#productsContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align:center;
+}
+.productImg{
+    height: 20rem;
+    border-radius: 2rem;
+}
+.productBoxes{
+    margin: 5rem;
+    border: .6rem solid blue;
+    border-radius: 3rem;
+}

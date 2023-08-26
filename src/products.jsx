@@ -15,13 +15,13 @@ function Products() {
     return (
         <>
             <NavBar />
-            <div>
+            <div id="productsContainer">
                 {data.map(product => (
-                    <div key={product.id}>
-                        <img src={product.image} alt={product.title} />
+                    <div className="productBoxes" key={product.id}>
+                        <img className="productImg" src={product.image} alt={product.title} />
                         <h1>{product.title}</h1>
                         <p>{product.description}</p>
-                        <p>{product.price}</p>
+                        <p>${product.price}</p>
                     </div>
                 ))}
             </div>
