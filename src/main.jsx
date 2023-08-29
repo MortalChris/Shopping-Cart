@@ -2,11 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx'
-import Cart from './cart.jsx'
-import Products from './products.jsx'
-import './index.css'
+import Cart from './Cart.jsx'
+import Products from './Procuts.jsx'
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
   {
     path: "/App",
     element: <App />,
