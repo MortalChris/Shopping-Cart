@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 import './Products.css'
 import NavBar from './NavBar.jsx'
 
-export function CartItems({ products }) {
+function CartItems({ products }) {
     const [quantity, setQuantity] = useState(0);
 
     function add() {
@@ -16,7 +16,8 @@ export function CartItems({ products }) {
         }
     }
 
-    if (products.length === 0) {
+    if (products && products.length === 0) {
+        console.log("Empty Cart")
         return (
             <>
                 <h2>Cart is Empty</h2>
@@ -24,20 +25,21 @@ export function CartItems({ products }) {
         )
         
     } else {
+        console.log("Car has items")
         return (
-            <div id="shoppingCart">
-                {products.map(product => (
+            <div id="cartItemList">
+                {products && products.map(product => (
                     <div className="cartItem" key={product.id}>
-                        <img src={product.image} alt={product.title} />
-                        <p>{product.title}</p>
-                        <p>{product.description}</p>
-                        <p>${product.price}</p>
-                        <div>
-                            <button onClick={subtract}>-</button>
-                            <p>{quantity}</p>
-                            <button onClick={add}>+</button>
+                            <img src={product.image} alt={product.title} />
+                            <p>{product.title}</p>
+                            <p>{product.description}</p>
+                            <p>${product.price}</p>
+                            <div>
+                                <button onClick={subtract}>-</button>
+                                <p>{quantity}</p>
+                                <button onClick={add}>+</button>
+                            </div>
                         </div>
-                    </div>
                 ))}
             </div>
         )
@@ -49,7 +51,6 @@ function Products() {
     const [data, setData] = useState([]);
     const [cartProducts, setCartProducts] = useState([]);
 
-
     useEffect(() => {
         fetch('https://fakestoreapi.com/products?limit=4')
             .then(response => response.json())
@@ -59,9 +60,8 @@ function Products() {
 
     function addToCart(product) {
         setCartProducts(prevCart => [...prevCart, product]);
-
     }
-
+    
     return (
         <>
             <NavBar />
@@ -75,11 +75,10 @@ function Products() {
                         <button onClick={() => addToCart(product)} className="productCheck" id="productButton">Add to Cart</button>
                     </div>
                 ))}
-                {/* {cartProducts.length > 0 && <CartItems products={cartProducts} />} Render Cart component conditionally */}
+                {/* <CartItems products={cartProducts} /> */}
             </div>
-
         </>
     );
 }
 
-export default Products;
+export { Products, CartItems };
