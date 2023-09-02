@@ -25,9 +25,10 @@
     margin-right: 2rem;
 }
 .cartProductInfoContainer p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
 }
 .cartProductInfoContainer h2{
     color: var(--text-clr);
+    font-size: 2rem;
 }

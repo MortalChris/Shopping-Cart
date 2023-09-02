@@ -1,17 +1,28 @@
 import { useState } from "react";
 
 function CartItems({ products }) {
-    const [quantity, setQuantity] = useState(0);
+    function QuantityButton() {
+        const [quantity, setQuantity] = useState(0);
 
-    function add() {
-        setQuantity(quantity + 1);
-    }
-
-    function subtract() {
-        if (quantity > 0) {
-        setQuantity(quantity - 1);
+        function add() {
+            setQuantity(quantity + 1);
         }
+    
+        function subtract() {
+            if (quantity > 0) {
+            setQuantity(quantity - 1);
+            }
+        }
+        return (
+            <>
+                <button onClick={subtract}>-</button>
+                <p>{quantity}</p>
+                <button onClick={add}>+</button>
+            </>
+        )
     }
+
+
 
     if (products && products.length === 0) {
         console.log("Empty Cart");
@@ -32,10 +43,9 @@ function CartItems({ products }) {
                         <h1>{product.title}</h1>
                         <p>{product.description}</p>
                         <h2>${product.price}</h2>
+                        <QuantityButton />
                     </div>
-                        <button onClick={subtract}>-</button>
-                        <p>{quantity}</p>
-                        <button onClick={add}>+</button>
+
                 </div>
             ))}
         </div>
