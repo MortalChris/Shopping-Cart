@@ -1,1 +1,33 @@
+#cartEmtpy{
+    margin-top: 20rem;
+    text-align: center;
+    font-size: 5rem;
+}
 
+#cartsContainer{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.cartBoxes{
+    margin: 5rem;
+    border: .6rem solid var(--primary-clr);
+    background-color: var(--secondary-clr);
+    border-radius: 3rem;
+}
+.cartBoxes img{
+    height: 15rem;
+    border-radius: 2rem;
+    float: left;
+    padding: 2rem;
+}
+.cartProductInfoContainer{  
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+.cartProductInfoContainer p{
+    font-size: 1.5rem;
+
+}
+.cartProductInfoContainer h2{
+    color: var(--text-clr);
+}

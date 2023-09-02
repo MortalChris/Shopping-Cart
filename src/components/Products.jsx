@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useProductContext } from "../context/ProductContext";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import NavBar from '../NavBar.jsx'
 import '../Products.css'
 
