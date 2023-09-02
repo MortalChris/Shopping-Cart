@@ -7,6 +7,7 @@
 #cartsContainer{
     display:grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 .cartBoxes{
     margin: 5rem;
@@ -31,4 +32,16 @@
 .cartProductInfoContainer h2{
     color: var(--text-clr);
     font-size: 2rem;
+}
+#totalPrice{
+    text-align: right;
+    padding: 2rem;
+}
+#checkOutButton{
+    width: 25%;
+    border: none;
+    padding: 1.2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: var(--primary-clr);
 }
