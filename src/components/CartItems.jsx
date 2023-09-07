@@ -4,7 +4,7 @@ function CartItems({ products }) {
     const [totalPrice, setTotalPrice] = useState(0);
 
     function QuantityButton() {
-        const [quantity, setQuantity] = useState(0);
+        const [quantity, setQuantity] = useState(1);
 
         function add() {
             setQuantity(quantity + 1);
