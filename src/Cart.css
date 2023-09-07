@@ -38,6 +38,7 @@
     padding: 2rem;
 }
 #checkOutButton{
+    place-self: center;
     width: 25%;
     border: none;
     padding: 1.2rem;
